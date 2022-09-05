@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        /* The heart of the matter */
+.testimonial-group > .row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.testimonial-group > .row > .col-xs-4 {
+  flex: 0 0 auto;
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">تنبؤ ساعي<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/day">تنبؤ جوي ليوم واحد<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/72">تنبؤ جوي لثلاثة ايام <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/7day">تنبؤ جوي لسبعة أيام<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/download">التقارير الجوية <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" method="post" action="/post">
+            <input class="form-control mr-sm-2" name="city" type="search" placeholder="example : Baghdad " value="{{city}}"
+                   aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">أسم المحطة</button>
+        </form>
+    </div>
+</nav>
+<section class="vh-100">
+    <style>
+        .ccenter{
+            text-align: center;
+        }
+    </style>
+
+    <h3 class="ccenter">الهيئة العامة للانواء الجوية والرصد الزلزالي  </h3>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#000; ">
+                <h5> DATE</h5>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#000; ">
+                <h5>Temperature</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>Dry temperature TTT C </h6><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>sensible heat</h6><br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#000; ">
+                <h5>Wind</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>Wind Direction</h6><br>
+            </div>
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>Wind speed(M/SEC)</h6><br>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#000; ">
+                <h5>Visibility/Pressure</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>Visibility km</h6><br>
+            </div>
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>Pressure sea level hpa </h6><br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#000; ">
+                <h5>Humidity % </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>Humidity</h6><br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#000; ">
+                <h5>Cloud/UV</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>Cloud </h6><br>
+            </div>
+            <div class="col btn-primary" style="margin:5px;height:50px;text-align:center;color:#fff;">
+                <h6>UV</h6><br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+<footer class="page-footer font-small blue" style="background-color:#dedede;">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2022 Copyright:
+    <p> Design by Eng.Samer Shuaa</p>
+  </div>
+  <!-- Copyright -->
+</footer>
+</section>
+
+<script src="static/jquery.min.js"></script>
+</body>
+
+</html>
